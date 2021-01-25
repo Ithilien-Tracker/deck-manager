@@ -1,0 +1,111 @@
+@font-face {
+	font-family: Aniron;
+	src: url("../fonts/anirm___.ttf");
+}
+
+@font-face {
+	font-family: Ringbearer;
+	src: url("../fonts/ringbearer.ttf");
+}
+
+@font-face {
+	font-family: Julius;
+	src: url("../fonts/JuliusSansOne-Regular.ttf");
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	background-color: green;
+	font-family: Ringbearer;
+}
+
+#container {
+	background-color: white;
+	height: 100%;
+	width: 98%;
+	margin: auto;
+	border-left: 2px solid;
+	border-right: 2px solid;
+}
+
+#container h1 {
+	margin-top: 0px;
+}
+
+#dashboard {
+	/* border: 10px solid; */
+	padding: 15px;
+	margin: auto;
+	display: inline-block;
+}
+
+#dashboard button {
+	font-family: Ringbearer;
+	color: #fff;
+	background-color: rgba(220, 0, 0, 1);
+	font-size: 1rem;
+	border-radius: 10px;
+	outline: none;
+	border: 0;
+	line-height: 2.5;
+	width: 265px;
+	text-shadow: 1px 1px 1px #000;
+	box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+	background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+}
+
+#dashboard button:hover {
+	background-color: rgba(255, 0, 0, 1);
+}
+
+#dashboard button:active {
+	box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.content {
+	height: 75%;
+}
+
+.content > div {
+	border: 2px solid;
+	border-color: black;
+	display: inline-block;
+	border-image: url("../images/dashboard-border.png") 30 stretch;
+	height: 100%;
+	width: 40%;
+	overflow: auto;
+	text-align: left;
+}
+
+.content table {
+	table-layout: auto;
+	width: 100%;
+}
+
+.content tr:hover {
+	background-color: #8cc4f8;
+	cursor: pointer;
+}
+
+.leadership {
+	background-color: #e0c3df;
+}
+
+.tactics {
+	background-color: #d9a284;
+}
+
+.lore {
+	background-color: #d2e5d2;
+}
+
+.spirit {
+	background-color: #c3d0d9;
+}
+
+.neutral {
+	background-color: #cecece;
+}

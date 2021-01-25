@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deck Manager</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Deck Manager</title>
+        <link rel="stylesheet" href="./styles/manager.css">        
+    </head>
+    <body>        
+        <div id="container">
+            
+            <div id="dashboard">
+                <h1>Deck Manager</h1>
+                <table>
+                    <tr>
+                        <td><button type="button">HEROES</button></td>
+                        <td><button type="button">CARDS</button></td>
+                        <td><button type="button">DECKS</button></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="content">
+                <div class="listing">
+                    <table id="heroes-cards">
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="listing">
+                    <table id="heroes-decks">
+                        <tr>
+                            <th>Deck</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Import JS -->
+        <script src="./scripts/data.js"></script>
+        <script src="/scripts/deck.js"></script>
+        <script src="./scripts/manager.js"></script>
+    </body>
 </html>
